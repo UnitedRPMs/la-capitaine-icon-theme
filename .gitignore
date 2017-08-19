@@ -1,0 +1,7 @@
+BUILD/*
+BUILDROOT/*
+RPMS/*
+SPECS/*
+SRPMS/*
+la-capitaine-icon-theme*.tar.gz
+.directory
