@@ -1,8 +1,8 @@
-%global commit0 635f2e81fa0e7261850af15a506fd70f509a3d2f
+%global commit0 cd4748301fde6c9cd74b68284fa42c7f159eceb5
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 
 Name:		la-capitaine-icon-theme
-Version:	0.4.0
+Version:	0.5.0
 Release:	1.git%{shortcommit0}%{?dist}
 Summary:	An icon pack designed to integrate with most desktop environments
 
@@ -49,6 +49,9 @@ fi
 %{_datadir}/icons/%{name}/
 
 %changelog
+
+* Tue Sep 26 2017 David Vásquez <davidva AT tutanota DOT com> - 0.5.0-1.gitcd47483
+- Updated to 0.5.0-1.gitcd47483
 
 * Fri Aug 18 2017 David Vásquez <davidva AT tutanota DOT com> - 0.4.0-1.git635f2e8
 - Initial build
