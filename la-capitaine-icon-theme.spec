@@ -1,9 +1,9 @@
-%global commit0 a3ac190d852c43e5f2ccd05c9e0510c897910106
+%global commit0 1717f4d846cff745895ccdefbd65ba3726c20064
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
 Name:		la-capitaine-icon-theme
-Version:	0.6.0
+Version:	0.6.1
 Release:	1%{gver}%{?dist}
 Summary:	An icon pack designed to integrate with most desktop environments
 
@@ -51,6 +51,9 @@ fi
 %{_datadir}/icons/%{name}/
 
 %changelog
+
+* Thu Nov 15 2018 David Va <davidva AT tuta DOT io> 0.6.1-1.git1717f4d
+- Updated to 0.6.1-1.git1717f4d
 
 * Wed Aug 01 2018 David Va <davidva AT tuta DOT io> 0.6.0-1.gita3ac190
 - Updated to 0.6.0-1.gita3ac190
