@@ -1,13 +1,13 @@
-%global commit0 1717f4d846cff745895ccdefbd65ba3726c20064
+%global commit0 36b97689cfaa2e20344590d4b01e079149106fc8
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
 Name:		la-capitaine-icon-theme
 Version:	0.6.1
-Release:	1%{gver}%{?dist}
+Release:	2%{gver}%{?dist}
 Summary:	An icon pack designed to integrate with most desktop environments
 
-Source:		https://github.com/keeferrourke/la-capitaine-icon-theme/archive/%{commit0}.tar.gz#/%{name}-%{shortcommit0}.tar.gz
+Source:	https://github.com/keeferrourke/la-capitaine-icon-theme/archive/%{commit0}.tar.gz#/%{name}-%{shortcommit0}.tar.gz
 
 Group:		User Interface/Desktops
 License:	GPLv3
@@ -51,6 +51,9 @@ fi
 %{_datadir}/icons/%{name}/
 
 %changelog
+
+* Sun Apr 26 2020 David Va <davidva AT tuta DOT io> 0.6.1-2.git36b9768
+- Updated to current commit
 
 * Thu Nov 15 2018 David Va <davidva AT tuta DOT io> 0.6.1-1.git1717f4d
 - Updated to 0.6.1-1.git1717f4d
